@@ -1,14 +1,11 @@
 import React, {Component} from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
     render() {
-        return React.createElement(
-            "div",
-            null,
-            "Hello World! React"
-        );
+        const greeting = 'Hi Tomm!!';
+        const firstDom = <h1>{greeting}</h1>;
+        return firstDom;
     }
 }
 
