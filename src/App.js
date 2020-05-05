@@ -3,9 +3,12 @@ import './App.css';
 
 class App extends Component {
     render() {
-        const greeting = 'Hi Tomm!!';
-        const firstDom = <h1>{greeting}</h1>;
-        return firstDom;
+        return (
+            <React.Fragment>
+                <label htmlFor="bar">bar</label>
+                <input type="text" onClick={() => {console.log("I am clicked.")}} />
+            </React.Fragment>
+        );
     }
 }
 
