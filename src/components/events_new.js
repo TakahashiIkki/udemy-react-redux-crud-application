@@ -29,7 +29,7 @@ class EventsNew extends Component {
         /**
          * submitting: submitボタンが押されたらtrueになる
          */
-        const {handleSubmit, pristine, submitting} = this.props
+        const {handleSubmit, pristine, submitting, invalid} = this.props
 
         return (
             <React.Fragment>
@@ -38,7 +38,7 @@ class EventsNew extends Component {
                     <div><Field label="Body" name="body" type="text" component={this.renderField}/></div>
 
                     <div>
-                        <input type="submit" value="Submit" disabled={pristine || submitting}/>
+                        <input type="submit" value="Submit" disabled={pristine || submitting || invalid}/>
                         <Link to="/">Cancel</Link>
                     </div>
                 </form>
