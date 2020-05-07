@@ -6,7 +6,6 @@ import {readEvents} from "../actions";
 
 class EventsIndex extends Component {
     componentDidMount() {
-        console.log('test')
         this.props.readEvents();
     }
 
@@ -22,7 +21,7 @@ class EventsIndex extends Component {
     }
 }
 
-const mapStateToProps = state => ({value: state.count.value});
+const mapStateToProps = state => ({});
 const mapDispatchToProps = ({readEvents});
 
 export default connect(mapStateToProps, mapDispatchToProps)(EventsIndex)
