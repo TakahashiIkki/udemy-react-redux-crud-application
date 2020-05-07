@@ -28,7 +28,7 @@ class EventsShow extends Component {
     }
 
     async onSubmit(values) {
-        // await this.props.putEvent(values);
+        await this.props.putEvent(values);
         this.props.history.push('/');
     }
 
